@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formdate.css">
+    <title>ลงทะเบียน</title>
+</head>
+
+<body>
+    <div class="img1">
+        <img src="./image/image-05.png" width="80%" height="80%">
+    </div>
+    
+    <img src="" >
+    <div class="fixed">
+    <form action="formdate.html" class="card"> 
+            <h1 class="sign-up">ลงทะเบียน</h1>
+            <br/><br/>
+                คำนำหน้า:    
+                <select>
+                    <option class="input">นาย</option>
+                    <option class="input">นาง</option>
+                    <option class="input">นางสาว</option>
+                    <option class="input">ไม่ระบุ</option>
+                </select>
+                <br/>
+                <div class="input">ชื่อ</div>
+                <input type="text" id="username">
+                <br/>
+                <div class="input">นามสกุล</div>
+                <input type="text" id="surname">
+
+                <!-- <div class="input">รหัสผ่าน</div> -->
+                <!-- <input type="password" id="password"> -->
+                <br/>
+                <div action="action_page.php">
+                 วันเกิด:
+                <input type="date" name="bday" class="input">
+            </div>
+            <br/>
+            <div> 
+                เพศ:
+                <input id="input-sex-boy" type="radio" class="pick" name="sex" value="boy">
+                <label for="input-boy">ผู้ชาย</label>
+
+                <input id="input-sex-girl" type="radio" class="pick" name="sex" value="girl">
+                <label for="input-girl">ผู้หญิง</label>
+            </div>
+            <br/>
+                <div class="mail">อีเมล</div>
+                <input type="text" id="mail">
+
+                <div class="mail_password">รหัสผ่าน</div>
+                <input type="password" id="mail_password">
+            <div>
+            <button type="cancel" class="btn-cancel">
+                <a href="T2.html" style="text-decoration:none" >ยกเลิก </a> 
+            </button>
+            <button type="submit" class="btn-submit">ส่ง</button>
+            </div>
+            <!-- <strong></strong> -->
+        </div>
+    </form>
+    <div class="img2">
+        <img src="./image/image-06.png" width="80%" height="80%">
+    </div>
+    <!-- <strong></strong> -->
+</body>
+</html>
